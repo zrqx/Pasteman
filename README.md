@@ -16,7 +16,18 @@ git clone https://github.com/zrqx/Pasteman.git
 
 # Install the Dependencies
 cd Pasteman
+# Setup up a environment to install the packages
+# For Windows 
+py -3 -m venv venv
+venv\Scripts\activate
+
+# For MacOS/linux
+python3 -m venv venv
+. venv/bin/activate
+
+# Install the required packages 
 pip3 install -r requirements.txt
+
 
 # Configure Pasteman
 python3 pasteman.py configure --username "Pastebin Username" --password "Pastebin Password" --devkey "API Dev Key"
